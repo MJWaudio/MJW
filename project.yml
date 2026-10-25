@@ -8,7 +8,12 @@ targets:
     type: application
     platform: iOS
     sources:
-      - path: MJWAudioBox
+    - path: .
+        excludes:
+          - README.md
+          - LICENSE
+          - project.yml
+          - codemagic.yaml
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.mjwaudio.box
